@@ -1,0 +1,89 @@
+{
+  "name": "finance-wechat",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development UNI_PLATFORM=mp-weixin vue-cli-service uni-build --watch",
+    "build": "npm run build:mp-weixin",
+    "build:custom": "cross-env NODE_ENV=production uniapp-cli custom",
+    "build:mp-weixin": "cross-env NODE_ENV=production UNI_PLATFORM=mp-weixin vue-cli-service uni-build --mode production",
+    "dev:custom": "cross-env NODE_ENV=development uniapp-cli custom",
+    "dev:mp-weixin": "cross-env NODE_ENV=development UNI_PLATFORM=mp-weixin vue-cli-service uni-build --watch",
+    "test:mp-weixin": "cross-env UNI_PLATFORM=mp-weixin jest -i",
+    "lint": "eslint --ext .jsx,.js src/  --fix ./src --cache"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "dependencies": {
+    "@dcloudio/uni-app-plus": "^2.0.1-35320220729002",
+    "@dcloudio/uni-h5": "^2.0.1-35320220729002",
+    "@dcloudio/uni-helper-json": "*",
+    "@dcloudio/uni-i18n": "^2.0.1-35320220729002",
+    "@dcloudio/uni-mp-360": "^2.0.1-35320220729002",
+    "@dcloudio/uni-mp-alipay": "^2.0.1-35320220729002",
+    "@dcloudio/uni-mp-baidu": "^2.0.1-35320220729002",
+    "@dcloudio/uni-mp-jd": "^2.0.1-35320220729002",
+    "@dcloudio/uni-mp-kuaishou": "^2.0.1-35320220729002",
+    "@dcloudio/uni-mp-lark": "^2.0.1-35320220729002",
+    "@dcloudio/uni-mp-qq": "^2.0.1-35320220729002",
+    "@dcloudio/uni-mp-toutiao": "^2.0.1-35320220729002",
+    "@dcloudio/uni-mp-vue": "^2.0.1-35320220729002",
+    "@dcloudio/uni-mp-weixin": "^2.0.1-35320220729002",
+    "@dcloudio/uni-mp-xhs": "^2.0.1-35320220729002",
+    "@dcloudio/uni-quickapp-native": "^2.0.1-35320220729002",
+    "@dcloudio/uni-quickapp-webview": "^2.0.1-35320220729002",
+    "@dcloudio/uni-stacktracey": "^2.0.1-35320220729002",
+    "@dcloudio/uni-stat": "^2.0.1-35320220729002",
+    "@vue/shared": "^3.0.0",
+    "core-js": "^3.6.5",
+    "crypto-js": "^3.3.0",
+    "fingerprintjs2": "^2.1.4",
+    "flyio": "^0.6.2",
+    "jsencrypt": "^3.3.2",
+    "momo-uniapp-px-to-rpx": "^1.0.2",
+    "regenerator-runtime": "^0.12.1",
+    "sa-sdk-miniprogram": "^1.20.2",
+    "uview-ui": "^1.8.4",
+    "vue": "^2.6.11",
+    "vuex": "^3.2.0"
+  },
+  "devDependencies": {
+    "@babel/runtime": "~7.17.9",
+    "@dcloudio/types": "^3.0.4",
+    "@dcloudio/uni-automator": "^2.0.1-35320220729002",
+    "@dcloudio/uni-cli-i18n": "^2.0.1-35320220729002",
+    "@dcloudio/uni-cli-shared": "^2.0.1-35320220729002",
+    "@dcloudio/uni-migration": "^2.0.1-35320220729002",
+    "@dcloudio/uni-template-compiler": "^2.0.1-35320220729002",
+    "@dcloudio/vue-cli-plugin-hbuilderx": "^2.0.1-35320220729002",
+    "@dcloudio/vue-cli-plugin-uni": "^2.0.1-35320220729002",
+    "@dcloudio/vue-cli-plugin-uni-optimize": "^2.0.1-35320220729002",
+    "@dcloudio/webpack-uni-mp-loader": "^2.0.1-35320220729002",
+    "@dcloudio/webpack-uni-pages-loader": "^2.0.1-35320220729002",
+    "@vue/cli-plugin-babel": "~4.5.19",
+    "@vue/cli-service": "~4.5.19",
+    "babel-plugin-import": "^1.11.0",
+    "cross-env": "^7.0.2",
+    "eslint": "^8.51.0",
+    "eslint-plugin-vue": "^9.17.0",
+    "jest": "^25.4.0",
+    "mini-types": "*",
+    "miniprogram-api-typings": "*",
+    "postcss-comment": "^2.0.0",
+    "pre-commit": "^1.2.2",
+    "sass": "^1.54.8",
+    "sass-loader": "^10.3.1",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "browserslist": [
+    "Android >= 4.4",
+    "ios >= 9"
+  ],
+  "resolutions": {
+    "@babel/runtime": "~7.17.9"
+  },
+  "uni-app": {
+    "scripts": {}
+  }
+}

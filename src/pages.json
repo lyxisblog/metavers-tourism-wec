@@ -1,0 +1,215 @@
+{
+  "easycom": {
+    "^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+  },
+  "pages": [
+    {
+      "path": "pages/home/home",
+      "style": {
+        "navigationBarTitleText": "游历星河",
+        "navigationStyle": "custom",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/user/user",
+      "style": {
+        "navigationBarTitleText": "个人中心",
+        "navigationStyle": "custom",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/webview/index",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false
+      }
+    }
+  ],
+
+  "subPackages": [
+
+    {
+      "name": "pagesA",
+      "root": "pagesA",
+      "pages": [
+        {
+          "path": "home/index",
+          "style": {
+            "navigationBarTitleText": "景区详情",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "homeSearch/homeSearch",
+          "style": {
+            "navigationBarTitleText": "搜索"
+          }
+        },
+        {
+          "path": "positioning/positioning",
+          "style": {
+            "navigationBarTitleText": "游历星河",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "login/index",
+          "style": {
+            "navigationBarTitleText": "登录注册"
+          }
+        },
+        {
+          "path": "login/otherLogin",
+          "style": {
+            "navigationBarTitleText": "其它手机号登录"
+          }
+        },
+        {
+          "path": "business/index",
+          "style": {
+            "navigationBarTitleText": "游历星河"
+          }
+        },
+        {
+          "path": "activation/index",
+          "style": {
+            "navigationBarTitleText": "激活"
+          }
+        },
+        {
+          "path": "active/index",
+          "style": {
+            "navigationBarTitleText": ""
+          }
+        },
+        {
+          "path": "wxpay/index",
+          "style": {
+            "navigationBarTitleText": "支付"
+          }
+        },
+        {
+          "path": "scanCode/index",
+          "style": {
+            "navigationBarTitleText": "扫一扫"
+          }
+        }
+      ]
+    },
+    {
+      "name": "pagesPerson",
+      "root": "pagesPerson",
+      "pages": [
+        {
+          "path": "feedback/index",
+          "style": {
+            "navigationBarTitleText": "意见反馈"
+          }
+        },
+        {
+          "path": "wallet/index",
+          "style": {
+            "navigationBarTitleText": "钱包",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "pay/index",
+          "style": {
+            "navigationBarTitleText": "解锁"
+          }
+        },
+        {
+          "path": "orderReact/index",
+          "style": {
+            "navigationBarTitleText": "订单记录"
+          }
+        },
+        {
+          "path": "orderReact/details",
+          "style": {
+            "navigationBarTitleText": "订单详情",
+            "navigationStyle": "custom"
+          }
+        }
+      ]
+    },
+    {
+      "name": "pagesAR",
+      "root": "pagesAR",
+      "pages": [
+        {
+          "path": "guide/index",
+          "style": {
+            "navigationBarTitleText": "",
+            "navigationBarTextStyle": "black",
+            "navigationBarBackgroundColor": "#FFFFFF"
+          }
+        },
+        {
+          "path": "inviteCode/index",
+          "style": {
+            "navigationBarTitleText": "邀请码"
+          }
+        },
+        {
+          "path": "coupon/couponList",
+          "style": {
+            "navigationBarTitleText": "优惠券中心"
+          }
+        },
+        {
+          "path": "coupon/couponDetails",
+          "style": {
+            "navigationBarTitleText": "详情"
+          }
+        },
+        {
+          "path": "appDownload/index",
+          "style": {
+            "navigationBarTitleText": "游历星河APP下载"
+          }
+        }
+      ]
+    },
+    {
+      "name": "pagesAction",
+      "root": "pagesAction",
+      "pages": [
+        {
+          "path": "spring/index",
+          "style": {
+            "navigationBarTitleText": "游历星河",
+            "navigationStyle": "custom"
+          }
+        }
+      ]
+    }
+  ],
+
+  "tabBar": {
+    "custom": true,
+    "color": "#AAAAAA",
+    "selectedColor": "#0E4A86",
+    "borderStyle": "white",
+    "backgroundColor": "",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "AR"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的"
+      }
+    ]
+  },
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "backgroundColor": "#FFFFFF"
+  }
+}
